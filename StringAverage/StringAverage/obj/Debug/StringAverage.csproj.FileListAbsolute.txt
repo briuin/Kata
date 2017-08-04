@@ -1,0 +1,6 @@
+C:\CodingKata\StringAverageGit\stringaverage\StringAverage\StringAverage\bin\Debug\StringAverage.exe.config
+C:\CodingKata\StringAverageGit\stringaverage\StringAverage\StringAverage\bin\Debug\StringAverage.exe
+C:\CodingKata\StringAverageGit\stringaverage\StringAverage\StringAverage\bin\Debug\StringAverage.pdb
+C:\CodingKata\StringAverageGit\stringaverage\StringAverage\StringAverage\obj\Debug\StringAverage.csprojResolveAssemblyReference.cache
+C:\CodingKata\StringAverageGit\stringaverage\StringAverage\StringAverage\obj\Debug\StringAverage.exe
+C:\CodingKata\StringAverageGit\stringaverage\StringAverage\StringAverage\obj\Debug\StringAverage.pdb
