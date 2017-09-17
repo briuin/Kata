@@ -1,0 +1,7 @@
+C:\CodingKata\StringAverageGit\stringaverage\NextBiggerNumber\NextBiggerNumberTest\obj\Debug\NextBiggerNumberTest.csprojResolveAssemblyReference.cache
+C:\CodingKata\StringAverageGit\stringaverage\NextBiggerNumber\NextBiggerNumberTest\bin\Debug\NextBiggerNumberTest.dll
+C:\CodingKata\StringAverageGit\stringaverage\NextBiggerNumber\NextBiggerNumberTest\bin\Debug\NextBiggerNumberTest.pdb
+C:\CodingKata\StringAverageGit\stringaverage\NextBiggerNumber\NextBiggerNumberTest\bin\Debug\NextBiggerNumber.exe
+C:\CodingKata\StringAverageGit\stringaverage\NextBiggerNumber\NextBiggerNumberTest\bin\Debug\NextBiggerNumber.pdb
+C:\CodingKata\StringAverageGit\stringaverage\NextBiggerNumber\NextBiggerNumberTest\obj\Debug\NextBiggerNumberTest.dll
+C:\CodingKata\StringAverageGit\stringaverage\NextBiggerNumber\NextBiggerNumberTest\obj\Debug\NextBiggerNumberTest.pdb
