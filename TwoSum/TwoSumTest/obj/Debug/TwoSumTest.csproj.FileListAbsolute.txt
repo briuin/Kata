@@ -1,0 +1,7 @@
+C:\CodingKata\StringAverageGit\stringaverage\TwoSum\TwoSumTest\obj\Debug\TwoSumTest.csprojResolveAssemblyReference.cache
+C:\CodingKata\StringAverageGit\stringaverage\TwoSum\TwoSumTest\bin\Debug\TwoSumTest.dll
+C:\CodingKata\StringAverageGit\stringaverage\TwoSum\TwoSumTest\bin\Debug\TwoSumTest.pdb
+C:\CodingKata\StringAverageGit\stringaverage\TwoSum\TwoSumTest\bin\Debug\TwoSum.exe
+C:\CodingKata\StringAverageGit\stringaverage\TwoSum\TwoSumTest\bin\Debug\TwoSum.pdb
+C:\CodingKata\StringAverageGit\stringaverage\TwoSum\TwoSumTest\obj\Debug\TwoSumTest.dll
+C:\CodingKata\StringAverageGit\stringaverage\TwoSum\TwoSumTest\obj\Debug\TwoSumTest.pdb
