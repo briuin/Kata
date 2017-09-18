@@ -26,6 +26,12 @@ namespace NextBiggerNumberTest
         }
 
         [TestMethod]
+        public void Test_Input_2170_Will_Output_2701()
+        {
+            Assert.AreEqual(2701, Kata.NextBiggerNumber(2170));
+        }
+
+        [TestMethod]
         public void Test_Input_9_Will_Output_negative1()
         {
             Assert.AreEqual(-1, Kata.NextBiggerNumber(9));

@@ -23,13 +23,22 @@ namespace NextBiggerNumber
             return result;
         }
 
-        public static void FindAndSwapLowerNumber(List<char> list)
+        private static void SortFromIndex(List<char> list, int index)
+        {
+            for (int i = index; i < list.Count - 1; i++)
+                for (int j = i + 1; j < list.Count; j++)
+                    if (list[i] > list[j])
+                        Swap(list, i, j);
+        }
+
+        private static void FindAndSwapLowerNumber(List<char> list)
         {
             for (int i = list.Count - 1; i >= 1; i--)
                 for (int j = i - 1; j >= 0; j--)
                     if (list[i] > list[j])
                     {
                         Swap(list, i, j);
+                        SortFromIndex(list, i);
                         return;
                     }
         }
