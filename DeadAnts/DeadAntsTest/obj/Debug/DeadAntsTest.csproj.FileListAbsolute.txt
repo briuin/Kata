@@ -1,0 +1,7 @@
+C:\CodingKata\StringAverageGit\stringaverage\DeadAnts\DeadAntsTest\bin\Debug\DeadAntsTest.dll
+C:\CodingKata\StringAverageGit\stringaverage\DeadAnts\DeadAntsTest\bin\Debug\DeadAntsTest.pdb
+C:\CodingKata\StringAverageGit\stringaverage\DeadAnts\DeadAntsTest\bin\Debug\DeadAnts.exe
+C:\CodingKata\StringAverageGit\stringaverage\DeadAnts\DeadAntsTest\bin\Debug\DeadAnts.pdb
+C:\CodingKata\StringAverageGit\stringaverage\DeadAnts\DeadAntsTest\obj\Debug\DeadAntsTest.csprojResolveAssemblyReference.cache
+C:\CodingKata\StringAverageGit\stringaverage\DeadAnts\DeadAntsTest\obj\Debug\DeadAntsTest.dll
+C:\CodingKata\StringAverageGit\stringaverage\DeadAnts\DeadAntsTest\obj\Debug\DeadAntsTest.pdb
