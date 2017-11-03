@@ -1,0 +1,13 @@
+C:\CodingKata\StringAverageGit\stringaverage\Poker\Poker\Poker\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\CodingKata\StringAverageGit\stringaverage\Poker\Poker\Poker\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\CodingKata\StringAverageGit\stringaverage\Poker\Poker\Poker\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\CodingKata\StringAverageGit\stringaverage\Poker\Poker\Poker\bin\Debug\Poker.dll
+C:\CodingKata\StringAverageGit\stringaverage\Poker\Poker\Poker\bin\Debug\Poker.pdb
+C:\CodingKata\StringAverageGit\stringaverage\Poker\Poker\Poker\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\CodingKata\StringAverageGit\stringaverage\Poker\Poker\Poker\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\CodingKata\StringAverageGit\stringaverage\Poker\Poker\Poker\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\CodingKata\StringAverageGit\stringaverage\Poker\Poker\Poker\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\CodingKata\StringAverageGit\stringaverage\Poker\Poker\Poker\obj\Debug\Poker.csprojResolveAssemblyReference.cache
+C:\CodingKata\StringAverageGit\stringaverage\Poker\Poker\Poker\obj\Debug\Poker.csproj.CoreCompileInputs.cache
+C:\CodingKata\StringAverageGit\stringaverage\Poker\Poker\Poker\obj\Debug\Poker.dll
+C:\CodingKata\StringAverageGit\stringaverage\Poker\Poker\Poker\obj\Debug\Poker.pdb
