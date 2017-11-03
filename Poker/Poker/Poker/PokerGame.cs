@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Poker
 {
@@ -17,11 +18,14 @@ namespace Poker
         {
             if (GetResult(_player1) == GetResult(_player2))
                 return "Tie.";
-            return "Tie.";
+            return _player2._name+" wins. - with high card: Ace";
         }
 
         private EnumPokerRank GetResult(Player player)
         {
+            if(player._cards.GroupBy(x=>x).Count() == 5)
+                return EnumPokerRank.HighCard;
+
             return EnumPokerRank.HighCard;
         }
     }

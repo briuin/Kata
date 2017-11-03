@@ -5,8 +5,8 @@ namespace Poker
 {
     public class Player
     {
-        private readonly string _name;
-        private readonly List<string> _cards;
+        public readonly string _name;
+        public readonly List<string> _cards;
 
         public Player(string name, List<string> cards)
         {

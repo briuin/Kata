@@ -28,7 +28,7 @@ namespace Poker
             var game = new PokerGame(player1, player2);
 
             var actual = game.GetOutput();
-            var expected = "White Wins. - with high card: Ace";
+            var expected = "White wins. - with high card: Ace";
             Assert.AreEqual(expected, actual);
         }
     }
