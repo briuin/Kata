@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace Poker
 {
@@ -10,7 +11,12 @@ namespace Poker
         public Player(string name, List<string> cards)
         {
             _name = name;
-            _cards = cards;
+            _cards = SortCardByNumber(cards);
+        }
+
+        private List<string> SortCardByNumber(List<string> cards)
+        {
+            return cards.OrderBy(x => x[0]).ToList();
         }
     }
 }
