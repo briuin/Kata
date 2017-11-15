@@ -23,22 +23,17 @@ namespace PokerHand
     {
         public string Input(string black, string white)
         {
-            var whiteCards = white.Split(' ');
-            List<Card> whiteValues = new List<Card>();
-            foreach (var card in whiteCards)
-            {
-                whiteValues.Add(GetCardValue(card[0]));
-            }
-            var blackCards = black.Split(' ');
-            List<Card> blackValues = new List<Card>();
-            foreach (var card in blackCards)
-            {
-                blackValues.Add(GetCardValue(card[0]));
-            }
+            var whiteValues = GetCards(white);
+            var blackValues = GetCards(black);
             //var result = "White wins - with high card: ";
             Card whiteHighCard = GetHighCard(whiteValues);
             Card blackHighCard = GetHighCard(blackValues);
 
+            return GetHighCardResult(whiteHighCard, blackHighCard);
+        }
+
+        private static string GetHighCardResult(Card whiteHighCard, Card blackHighCard)
+        {
             if (whiteHighCard.Number > blackHighCard.Number)
             {
                 return "White wins - with high card: " + whiteHighCard.Name;
@@ -47,6 +42,17 @@ namespace PokerHand
             {
                 return "Black wins - with high card: " + blackHighCard.Name;
             }
+        }
+
+        private List<Card> GetCards(string cards)
+        {
+            List<Card> whiteValues = new List<Card>();
+
+            foreach (var card in cards.Split(' '))
+            {
+                whiteValues.Add(GetCardValue(card[0]));
+            }
+            return whiteValues;
         }
 
         private Card GetHighCard(List<Card> values)
