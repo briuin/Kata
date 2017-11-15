@@ -18,6 +18,7 @@ namespace PokerHand
             var gameResult = game.Input(player1, player2);
             Assert.AreEqual(result, gameResult);
         }
+
         [TestCase("2C 2H 4S QC 8H", "2H 3D 5S 9C JD", "Black wins - with One Pair: 2")]
         [TestCase("3C 3H 4S QC 8H", "2H 3D 5S 9C JD", "Black wins - with One Pair: 3")]
         public void OnePair(string player1, string player2, string result)
@@ -27,13 +28,22 @@ namespace PokerHand
             Assert.AreEqual(result, gameResult);
         }
 
-        [TestCase("3H 4H 5H 6H 9H", "Flush")]
-        public void FlushCard(string player1,string result)
+        [TestCase("3H 4H 5H 6H 7C", "Straight")]
+        public void StraightCard(string player1, string result)
         {
-            var game=new PokerGame();
+            var game = new PokerGame();
             string cardResult = game.GetCardSuit(player1);
 
-            Assert.AreEqual(result,cardResult);
+            Assert.AreEqual(result, cardResult);
+        }
+
+        [TestCase("3H 4H 5H 6H 9H", "Flush")]
+        public void FlushCard(string player1, string result)
+        {
+            var game = new PokerGame();
+            string cardResult = game.GetCardSuit(player1);
+
+            Assert.AreEqual(result, cardResult);
         }
     }
 
@@ -49,7 +59,7 @@ namespace PokerHand
             var pairCard = blackCard.GroupBy(x => x.Number).Where(x => x.Count() == 2);
             if (blackGroupCount == 4)
             {
-                return "Black wins - with One Pair: "+ pairCard.First().First().Name;
+                return "Black wins - with One Pair: " + pairCard.First().First().Name;
             }
 
             //var result = "White wins - with high card: ";
@@ -105,6 +115,12 @@ namespace PokerHand
 
         public string GetCardSuit(string player1)
         {
+            var cards = GetCards(player1);
+            cards = cards.OrderBy(x => x.Number).ToList();
+            if (cards.GroupBy(x => x.Number).Count() == 5 && cards[4].Number - cards[0].Number == 4)
+            {
+                return "Straight";
+            }
             return "Flush";
         }
     }
