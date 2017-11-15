@@ -19,6 +19,7 @@ namespace PokerHand
             Assert.AreEqual(result, gameResult);
         }
         [TestCase("2C 2H 4S QC 8H", "2H 3D 5S 9C JD", "Black wins - with One Pair: 2")]
+        [TestCase("3C 3H 4S QC 8H", "2H 3D 5S 9C JD", "Black wins - with One Pair: 3")]
         public void OnePair(string player1, string player2, string result)
         {
             var game = new PokerGame();
@@ -36,9 +37,10 @@ namespace PokerHand
             //var whiteGroupCount = whiteCard.GroupBy(x => x.Number);
             var blackGroupCount = blackCard.GroupBy(x => x.Number).Count();
 
+            var pairCard = blackCard.GroupBy(x => x.Number).Where(x => x.Count() == 2);
             if (blackGroupCount == 4)
             {
-                return "Black wins - with One Pair: 2";
+                return "Black wins - with One Pair: "+ pairCard.First().First().Name;
             }
 
             //var result = "White wins - with high card: ";
