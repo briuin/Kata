@@ -1,6 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using NUnit.Framework;
+﻿using NUnit.Framework;
+using System.Collections.Generic;
 using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace PokerHand
@@ -11,6 +10,7 @@ namespace PokerHand
         [TestCase("2H 3D 5S 9C KD", "2C 3H 4S 8C AH", "White wins - with high card: Ace")]
         [TestCase("2H 3D 5S 9C JD", "2C 3H 4S 8C QH", "White wins - with high card: Q")]
         [TestCase("2H 3D 5S 9C JD", "2C 3H 4S QC 8H", "White wins - with high card: Q")]
+        [TestCase("2C 3H 4S QC 8H", "2H 3D 5S 9C JD", "Black wins - with high card: Q")]
         public void HighCard(string player1, string player2, string result)
         {
             var game = new PokerGame();
@@ -24,15 +24,29 @@ namespace PokerHand
         public string Input(string black, string white)
         {
             var whiteCards = white.Split(' ');
-            List<Card> values = new List<Card>();
+            List<Card> whiteValues = new List<Card>();
             foreach (var card in whiteCards)
             {
-                values.Add(GetCardValue(card[0]));
+                whiteValues.Add(GetCardValue(card[0]));
             }
-            var result = "White wins - with high card: ";
-            Card highCard=GetHighCard(values);
+            var blackCards = black.Split(' ');
+            List<Card> blackValues = new List<Card>();
+            foreach (var card in blackCards)
+            {
+                blackValues.Add(GetCardValue(card[0]));
+            }
+            //var result = "White wins - with high card: ";
+            Card whiteHighCard = GetHighCard(whiteValues);
+            Card blackHighCard = GetHighCard(blackValues);
 
-            return result + highCard.Name;
+            if (whiteHighCard.Number > blackHighCard.Number)
+            {
+                return "White wins - with high card: " + whiteHighCard.Name;
+            }
+            else
+            {
+                return "Black wins - with high card: " + blackHighCard.Name;
+            }
         }
 
         private Card GetHighCard(List<Card> values)
@@ -46,9 +60,7 @@ namespace PokerHand
                 }
             }
             return high;
-
         }
-
 
         private Card GetCardValue(char c)
         {
