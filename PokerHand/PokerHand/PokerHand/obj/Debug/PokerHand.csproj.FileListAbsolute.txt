@@ -11,3 +11,5 @@ C:\CodingKata\StringAverageGit\stringaverage\PokerHand\PokerHand\PokerHand\obj\D
 C:\CodingKata\StringAverageGit\stringaverage\PokerHand\PokerHand\PokerHand\obj\Debug\PokerHand.csproj.CoreCompileInputs.cache
 C:\CodingKata\StringAverageGit\stringaverage\PokerHand\PokerHand\PokerHand\obj\Debug\PokerHand.dll
 C:\CodingKata\StringAverageGit\stringaverage\PokerHand\PokerHand\PokerHand\obj\Debug\PokerHand.pdb
+C:\CodingKata\StringAverageGit\stringaverage\PokerHand\PokerHand\PokerHand\bin\Debug\nunit.framework.dll
+C:\CodingKata\StringAverageGit\stringaverage\PokerHand\PokerHand\PokerHand\bin\Debug\nunit.framework.xml
