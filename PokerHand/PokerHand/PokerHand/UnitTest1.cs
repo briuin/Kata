@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using System.Collections.Generic;
+using System.Linq;
 using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace PokerHand
@@ -17,17 +18,32 @@ namespace PokerHand
             var gameResult = game.Input(player1, player2);
             Assert.AreEqual(result, gameResult);
         }
+        [TestCase("2C 2H 4S QC 8H", "2H 3D 5S 9C JD", "Black wins - with One Pair: 2")]
+        public void OnePair(string player1, string player2, string result)
+        {
+            var game = new PokerGame();
+            var gameResult = game.Input(player1, player2);
+            Assert.AreEqual(result, gameResult);
+        }
     }
 
     public class PokerGame
     {
         public string Input(string black, string white)
         {
-            var whiteValues = GetCards(white);
-            var blackValues = GetCards(black);
+            var whiteCard = GetCards(white);
+            var blackCard = GetCards(black);
+            //var whiteGroupCount = whiteCard.GroupBy(x => x.Number);
+            var blackGroupCount = blackCard.GroupBy(x => x.Number).Count();
+
+            if (blackGroupCount == 4)
+            {
+                return "Black wins - with One Pair: 2";
+            }
+
             //var result = "White wins - with high card: ";
-            Card whiteHighCard = GetHighCard(whiteValues);
-            Card blackHighCard = GetHighCard(blackValues);
+            Card whiteHighCard = GetHighCard(whiteCard);
+            Card blackHighCard = GetHighCard(blackCard);
 
             return GetHighCardResult(whiteHighCard, blackHighCard);
         }
@@ -46,13 +62,13 @@ namespace PokerHand
 
         private List<Card> GetCards(string cards)
         {
-            List<Card> whiteValues = new List<Card>();
+            List<Card> values = new List<Card>();
 
             foreach (var card in cards.Split(' '))
             {
-                whiteValues.Add(GetCardValue(card[0]));
+                values.Add(GetCardValue(card[0]));
             }
-            return whiteValues;
+            return values;
         }
 
         private Card GetHighCard(List<Card> values)
