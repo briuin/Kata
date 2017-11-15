@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization.Formatters;
 using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace PokerHand
@@ -29,19 +30,11 @@ namespace PokerHand
         }
 
         [TestCase("3H 4H 5H 6H 7C", "Straight")]
-        public void StraightCard(string player1, string result)
-        {
-            var game = new PokerGame();
-            string cardResult = game.GetCardSuit(player1);
-
-            Assert.AreEqual(result, cardResult);
-        }
-
         [TestCase("3H 4H 5H 6H 9H", "Flush")]
-        public void FlushCard(string player1, string result)
+        public void GetCardSuit(string cards, string result)
         {
             var game = new PokerGame();
-            string cardResult = game.GetCardSuit(player1);
+            string cardResult = game.GetCardSuit(cards);
 
             Assert.AreEqual(result, cardResult);
         }
@@ -95,11 +88,12 @@ namespace PokerHand
         private Card GetHighCard(List<Card> values)
         {
             Card high = new Card();
-            for (int i = 0; i < values.Count; i++)
+
+            foreach (Card t in values)
             {
-                if (high.Number < values[i].Number)
+                if (high.Number < t.Number)
                 {
-                    high = values[i];
+                    high = t;
                 }
             }
             return high;
@@ -113,10 +107,9 @@ namespace PokerHand
             return card;
         }
 
-        public string GetCardSuit(string player1)
+        public string GetCardSuit(string input)
         {
-            var cards = GetCards(player1);
-            cards = cards.OrderBy(x => x.Number).ToList();
+            var cards = GetCards(input).OrderBy(x => x.Number).ToList(); 
             if (cards.GroupBy(x => x.Number).Count() == 5 && cards[4].Number - cards[0].Number == 4)
             {
                 return "Straight";
