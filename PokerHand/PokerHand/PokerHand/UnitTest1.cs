@@ -1,4 +1,6 @@
-﻿using NUnit.Framework;
+﻿using System.Collections.Generic;
+using System.Linq;
+using NUnit.Framework;
 using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace PokerHand
@@ -21,12 +23,55 @@ namespace PokerHand
     {
         public string Input(string black, string white)
         {
-            var white5thCards = white.Split(' ')[4];
-            var cardValue = white5thCards[0];
+            var whiteCards = white.Split(' ');
+            List<Card> values = new List<Card>();
+            foreach (var card in whiteCards)
+            {
+                values.Add(GetCardValue(card[0]));
+            }
             var result = "White wins - with high card: ";
-            if (cardValue == 'Q')
-                return result + "Q";
-            return result + "Ace";
+            Card highCard=GetHighCard(values);
+
+            return result + highCard.Name;
+        }
+
+        private Card GetHighCard(List<Card> values)
+        {
+            Card high = new Card();
+            for (int i = 0; i < values.Count; i++)
+            {
+                if (high.Number < values[i].Number)
+                {
+                    high = values[i];
+                }
+            }
+            return high;
+
+        }
+
+
+        private Card GetCardValue(char c)
+        {
+            string number = "23456789TJQKA";
+            var card = new Card();
+            card.Number = number.IndexOf(c) + 2;
+            return card;
+        }
+    }
+
+    public class Card
+    {
+        public int Number { get; set; }
+        public string Suit { get; set; }
+
+        public string Name
+        {
+            get
+            {
+                if (Number == 12) return "Q";
+                if (Number == 14) return "Ace";
+                return Number.ToString();
+            }
         }
     }
 }
