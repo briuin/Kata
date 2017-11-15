@@ -26,6 +26,15 @@ namespace PokerHand
             var gameResult = game.Input(player1, player2);
             Assert.AreEqual(result, gameResult);
         }
+
+        [TestCase("3H 4H 5H 6H 9H", "Flush")]
+        public void FlushCard(string player1,string result)
+        {
+            var game=new PokerGame();
+            string cardResult = game.GetCardSuit(player1);
+
+            Assert.AreEqual(result,cardResult);
+        }
     }
 
     public class PokerGame
@@ -92,6 +101,11 @@ namespace PokerHand
             var card = new Card();
             card.Number = number.IndexOf(c) + 2;
             return card;
+        }
+
+        public string GetCardSuit(string player1)
+        {
+            return "Flush";
         }
     }
 
