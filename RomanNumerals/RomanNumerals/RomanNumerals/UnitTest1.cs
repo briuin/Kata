@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using NUnit.Framework;
 
 namespace RomanNumerals
@@ -35,18 +36,16 @@ namespace RomanNumerals
         };
         public static int Translate(string s)
         {
-            var digitArray = s.ToCharArray();
-            var result = 0;
-            for (var i = digitArray.Length - 1; i >= 0; i--)
+            var digits = s.ToCharArray().Select(c => Dict[c]).ToList();
+            for (var i = 0; i < digits.Count - 1; i++)
             {
-                if ( i != digitArray.Length - 1 && Dict[digitArray[i + 1]] > Dict[digitArray[i]])
+                if (digits[i] < digits[i + 1])
                 {
-                    result -= Dict[digitArray[i]];
-                    continue;
+                    digits[i] = -1 * digits[i];
                 }
-                result += Dict[digitArray[i]];
             }
-            return result;
+
+            return digits.Sum(x => x);
         }
     }
 }
