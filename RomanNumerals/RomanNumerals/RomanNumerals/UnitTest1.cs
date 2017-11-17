@@ -29,7 +29,7 @@ namespace RomanNumerals
             int result = 0;
             for (int i = digitArray.Length - 1; i >= 0; i--)
             {
-                if ( i+1 < digitArray.Length && dict[digitArray[i + 1]] < dict[digitArray[i]])
+                if ( i-1 >= 0 && dict[digitArray[i - 1]] < dict[digitArray[i]])
                 {
                     result -= dict[digitArray[i]];
                     continue;
