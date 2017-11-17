@@ -1,0 +1,15 @@
+C:\CodingKata\StringAverageGit\stringaverage\RomanNumerals\RomanNumerals\RomanNumerals\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\CodingKata\StringAverageGit\stringaverage\RomanNumerals\RomanNumerals\RomanNumerals\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\CodingKata\StringAverageGit\stringaverage\RomanNumerals\RomanNumerals\RomanNumerals\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\CodingKata\StringAverageGit\stringaverage\RomanNumerals\RomanNumerals\RomanNumerals\bin\Debug\RomanNumerals.dll
+C:\CodingKata\StringAverageGit\stringaverage\RomanNumerals\RomanNumerals\RomanNumerals\bin\Debug\RomanNumerals.pdb
+C:\CodingKata\StringAverageGit\stringaverage\RomanNumerals\RomanNumerals\RomanNumerals\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\CodingKata\StringAverageGit\stringaverage\RomanNumerals\RomanNumerals\RomanNumerals\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\CodingKata\StringAverageGit\stringaverage\RomanNumerals\RomanNumerals\RomanNumerals\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\CodingKata\StringAverageGit\stringaverage\RomanNumerals\RomanNumerals\RomanNumerals\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\CodingKata\StringAverageGit\stringaverage\RomanNumerals\RomanNumerals\RomanNumerals\obj\Debug\RomanNumerals.csprojResolveAssemblyReference.cache
+C:\CodingKata\StringAverageGit\stringaverage\RomanNumerals\RomanNumerals\RomanNumerals\obj\Debug\RomanNumerals.csproj.CoreCompileInputs.cache
+C:\CodingKata\StringAverageGit\stringaverage\RomanNumerals\RomanNumerals\RomanNumerals\obj\Debug\RomanNumerals.dll
+C:\CodingKata\StringAverageGit\stringaverage\RomanNumerals\RomanNumerals\RomanNumerals\obj\Debug\RomanNumerals.pdb
+C:\CodingKata\StringAverageGit\stringaverage\RomanNumerals\RomanNumerals\RomanNumerals\bin\Debug\nunit.framework.dll
+C:\CodingKata\StringAverageGit\stringaverage\RomanNumerals\RomanNumerals\RomanNumerals\bin\Debug\nunit.framework.xml
