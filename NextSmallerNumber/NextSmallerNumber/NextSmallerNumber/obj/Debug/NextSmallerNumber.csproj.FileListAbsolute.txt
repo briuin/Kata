@@ -1,0 +1,16 @@
+C:\CodingKata\StringAverageGit\stringaverage\NextSmallerNumber\NextSmallerNumber\NextSmallerNumber\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\CodingKata\StringAverageGit\stringaverage\NextSmallerNumber\NextSmallerNumber\NextSmallerNumber\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\CodingKata\StringAverageGit\stringaverage\NextSmallerNumber\NextSmallerNumber\NextSmallerNumber\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\CodingKata\StringAverageGit\stringaverage\NextSmallerNumber\NextSmallerNumber\NextSmallerNumber\bin\Debug\NextSmallerNumber.dll
+C:\CodingKata\StringAverageGit\stringaverage\NextSmallerNumber\NextSmallerNumber\NextSmallerNumber\bin\Debug\NextSmallerNumber.pdb
+C:\CodingKata\StringAverageGit\stringaverage\NextSmallerNumber\NextSmallerNumber\NextSmallerNumber\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\CodingKata\StringAverageGit\stringaverage\NextSmallerNumber\NextSmallerNumber\NextSmallerNumber\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\CodingKata\StringAverageGit\stringaverage\NextSmallerNumber\NextSmallerNumber\NextSmallerNumber\bin\Debug\nunit.framework.dll
+C:\CodingKata\StringAverageGit\stringaverage\NextSmallerNumber\NextSmallerNumber\NextSmallerNumber\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\CodingKata\StringAverageGit\stringaverage\NextSmallerNumber\NextSmallerNumber\NextSmallerNumber\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\CodingKata\StringAverageGit\stringaverage\NextSmallerNumber\NextSmallerNumber\NextSmallerNumber\bin\Debug\nunit.framework.pdb
+C:\CodingKata\StringAverageGit\stringaverage\NextSmallerNumber\NextSmallerNumber\NextSmallerNumber\bin\Debug\nunit.framework.xml
+C:\CodingKata\StringAverageGit\stringaverage\NextSmallerNumber\NextSmallerNumber\NextSmallerNumber\obj\Debug\NextSmallerNumber.csprojResolveAssemblyReference.cache
+C:\CodingKata\StringAverageGit\stringaverage\NextSmallerNumber\NextSmallerNumber\NextSmallerNumber\obj\Debug\NextSmallerNumber.csproj.CoreCompileInputs.cache
+C:\CodingKata\StringAverageGit\stringaverage\NextSmallerNumber\NextSmallerNumber\NextSmallerNumber\obj\Debug\NextSmallerNumber.dll
+C:\CodingKata\StringAverageGit\stringaverage\NextSmallerNumber\NextSmallerNumber\NextSmallerNumber\obj\Debug\NextSmallerNumber.pdb
